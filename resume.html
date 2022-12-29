@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Home</title>
+    <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/slick-theme.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body class="resumeBody">
+    <header class="headerAll">
+        <div class="menu">
+            <ul>
+                <li>
+                    <a class="active homeLink" href="resume.html"></a>
+                </li>
+                <li>
+                    <a class="aboutLink" href="about.html"></a>
+                </li>
+                <li>
+                    <a class="contactLink" href="contact.html"></a>
+                </li>
+                <!-- <li>
+                    <a class="galleryLink" href="#">
+                        <p>GALLERY</p>
+                    </a>
+                </li> -->
+            </ul>
+        </div>            
+    </header>
+    <div class="orangebg"></div>
+    <section class="sec1">
+        <div class="outIndex">
+            <div class="resPto-outer">
+                <div class="resPto">
+                    <img src="./Images/IMG_20210126_231052.jpg" alt="MyImage.jpg" class="myPhoto"/>
+                </div>
+                <div class="resPto">
+                    <img src="./Images/webdev.jpg" alt="MyImage.jpg" class="myPhoto"/>
+                </div>
+                <div class="resPto">
+                    <img src="./Images/webdev2.png" alt="MyImage.jpg" class="myPhoto"/>
+                </div>
+            </div>
+            
+            <div class="resumeh1">
+                <h1 class="nameh1">I'M SABARI MATHIVANAN.
+                    <span class="designation">UI DEVELOPER</span>
+                </h1>
+                <p class="careerObjective">
+                    Seeking to work in a professional and competitive environment where,
+                    I can contribute my full potential in the organization and imbibe
+                    latest technologies.
+                </p>
+                <div class="button-about">
+                    <a href="about.html" class="button" >
+                        <span class="button-text btn-abt">MORE ABOUT ME</span>
+                        <span class="button-about-icon"></span>
+                    </a>
+                </div>
+            </div>
+            <div class="clear"></div> 
+        </div> 
+    </section>
+    <script src="./js/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.resPto-outer').slick({
+                autoplay: true,
+                fade: true,
+                autoplaySpeed: 2000
+            });
+        });
+    </script>
+</body>
+</html>
